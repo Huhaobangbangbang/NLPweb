@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="#" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Webpage Title -->
+    <title>Question Answering</title>
+    
+    <!-- Styles -->
+    <link href="../static/css/css2.css" rel="stylesheet">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="../static/css/swiper.css" rel="stylesheet">
+	<link href="../static/css/styles.css" rel="stylesheet">
+     <!-- 加载画面 -->
+	<link rel="stylesheet" href="../static/css/loading.css">
+    <script src="../static/js/loading.js"></script>	
+	<!-- Favicon  -->
+    <link href="_css/Icomoon/style.css" rel="stylesheet" type="text/css" />
+    <link href="_css/main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="_scripts/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="_scripts/main.js"></script>
+    <!-- 程序加载画面 -->
+    <style>
+        #loading_page{
+            background-color: #b4e23f;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            margin-top: 0px;
+            top: 0px;
+        }
+        #loading-center{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            }
+        #loading-center-absolute {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 50px;
+            width: 150px;
+            margin-top: -25px;
+            margin-left: -75px;
+        
+        }
+        .object{
+            width: 8px;
+            height: 50px;
+            margin-right:5px;
+            background-color: #FFF;
+            -webkit-animation: animate 1s infinite;
+            animation: animate 1s infinite;
+            float: left;
+            }
+        
+        .object:last-child {
+            margin-right: 0px;
+            }
+        
+        .object:nth-child(10){
+            -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;	
+            }
+        .object:nth-child(9){
+            -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;	
+            }	
+        .object:nth-child(8){
+            -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;	
+            }
+        .object:nth-child(7){
+            -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;	
+            }
+        .object:nth-child(6){
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;	
+            }
+        .object:nth-child(5){
+            -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+            }
+        .object:nth-child(4){
+            -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;		
+            }
+        .object:nth-child(3){
+            -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;	
+            }
+        .object:nth-child(2){
+            -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+            }						
+            
+        
+        
+        @-webkit-keyframes animate {
+        
+        50% {
+            -ms-transform: translateX(-25px) scaleY(2); 
+            -webkit-transform: translateX(-25px) scaleY(2);
+            transform: translateX(-25px) scaleY(2);
+            }
+        
+        
+        }
+        
+        @keyframes animate {
+        50% {
+            -ms-transform: translateX(-25px) scaleY(2); 
+            -webkit-transform: translateX(-25px) scaleY(2);
+            transform: translateX(-25px) scaleY(2);
+            }
+        
+        
+        }
+        
+        </style>
+</head>
+<body>
+    <div id="loading_page" class="loading_page" style="display: none;">
+        <div id="loading-center">
+        <div id="loading-center-absolute">
+        <div class="object"></div>
+        <div class="object"></div>
+        <div class="object"></div>
+        <div class="object"></div>
+        <div class="object"></div>
+        <div class="object"></div>
+        <div class="object"></div>
+        <div class="object"></div>
+        <div class="object"></div>
+        <div class="object"></div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+    <div id="contact" class="form-1">
+        <div class="container">
+    <!--定义页面主题词-->
+    <section class="content wrapper">
+		<h1 align="center">Question Answering</h1>
+		<p align="center" class="description">问答模型可以从给定的文本中检索问题的答案，这对于在文档中搜索答案很有用。 一些问答模型可以在没有上下文的情况下生成答案！请输入您的问题和包含问题的文章，我们的模型将会在文章中找到您的答案</p>
+        <p align="center" class="description">例如您可以在问题选项中输入：哪个名字也被用来用英语描述亚马逊雨林？</p>
+        <p align="center" class="description">在文章选项中输入：亚马逊雨林，英文也称为 Amazonia 或 Amazon Jungle </p>
+    </section>
+    
+    <!--引入jQuery包用于使用ajax-->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <!-- <h2 align="center">请输入您的问题和包含问题的文章，我们的模型将会在文章中找到您的答案</h2> -->
+    <!--创建两个input输入框，定义id分别为name,age-->
+    <input type="text" id="keywords" name="keywords" class="form-control-input" placeholder="your question" size="38" style="text-align:center">
+    <br>
+    <input type="text" id="topk" name="topk" class="form-control-input"  placeholder="the article contain the answer of you question " size="38" style="text-align:center">
+    <br>
+    <!--创建button按钮，点击则激发submit()事件-->
+    <button onclick="qa_submit();" class="form-control-submit-button">submit</button>
+    
+    <script>
+        /*在这里编写submit()事件*/
+        function qa_submit() { 
+            alert('正在加载中，请稍后...'),
+            $.ajax(
+                $('#loading_page').show()
+            ),
+            $.ajax(
+            {
+            url: "qa_submit", /*数据提交到submit处*/
+            type: "POST", /*采用POST方法提交*/
+            data: { "keywords": $("#keywords").val(),"topk":$("#topk").val()},  /*提交的数据（json格式），从输入框中获取*/
+            /*result为后端函数返回的json*/
+            success: function (result) {
+                $('#loading_page').hide();
+                    alert('结果为:'+result.message)
+                    $(".content").html(result.message)
+                }
+                
+            });
+        }
+    </script>
+  </div> <!-- end of col -->
+</div> <!-- end of row -->
+
+</body>
+</html>
+
+
+
+

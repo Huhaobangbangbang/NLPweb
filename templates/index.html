@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content=""> <!-- website name -->
+	<meta property="og:site" content=""> <!-- website link -->
+	<meta property="og:title" content=""> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content=""> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content=""> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content=""> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+    
+    <!-- Webpage Title -->
+    <title>NLP项目</title>
+    
+    <!-- Styles -->
+    <link href="../static/css/css2.css" rel="stylesheet">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="../static/css/swiper.css" rel="stylesheet">
+	<link href="../static/css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarExample">
+    
+    <!-- Navigation -->
+    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <!-- <a class="navbar-brand logo-image" href=""><img src="../static/picture/logo.svg" alt="alternative"></a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">主页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">项目</a>
+                    </li>
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">功能体验</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="/zero_shot_page" target="_blank">cattree rank</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="/qa_submit">Question Answering</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="/chatgpt_page">Chatgpt 试用</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">了解我们</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="../static/article.html">项目愿景</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="../static/terms.html">Terms Conditions</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="../static/privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-solid-sm" href="#contact">Get quote</a>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+      
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <div class="section-title">欢迎来到清瞳时代</div>
+                        <h1 class="h1-large"> NLP项目展示</h1>
+                        <p class="p-large">通过NLP帮助亚马逊买家解决一系列问题</p>
+                        <a class="btn-solid-lg" href="#services">提供服务</a>
+                        <a class="quote" href="#contact"><i class="fas fa-paper-plane"></i>Get quote</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="../static/picture/header-illustration.svg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Services -->
+    <div id="services" class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-icon blue">
+                            <span class="far fa-file-alt"></span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">搜索有价值数据</h5>
+                            <p>建立相关商品的数据集，在此基础上你可以得到你输入关键词的重要评论</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="d-flex">
+                                    <i class="fas fa-check"></i>
+                                    <div class="flex-grow-1">得到市场上比较小众，未被挖掘的方向</div>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fas fa-check"></i>
+                                    <div class="flex-grow-1">得到用户想要的有价值信息</div>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fas fa-check"></i>
+                                    <div class="flex-grow-1">满足专属场景的高准确率要求</div>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fas fa-check"></i>
+                                    <div class="flex-grow-1">搜索时间不到一分钟</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-icon yellow">
+                            <span class="fas fa-solar-panel"></span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">私人定制</h5>
+                            <p>更快建设满足用户特定需求的数据集，最终对数据进行分析，得到用户想要的有价值信息</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="d-flex">
+                                    <i class="fas fa-check"></i>
+                                    <div class="flex-grow-1">建设某一场景下的数据集，并进行算法优化</div>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fas fa-check"></i>
+                                    <div class="flex-grow-1">常规分类问题精确度达到97%</div>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fas fa-check"></i>
+                                    <div class="flex-grow-1">泛化性和语义性提升</div>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fas fa-check"></i>
+                                    <div class="flex-grow-1">数据相关性分析</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-icon red">
+                            <span class="fas fa-gift"></span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">洞悉市场大盘</h5>
+                            <p>我们通过海量数据筛选出某一类产品的历史数据，来对这个品类的市场做全方位了解</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="d-flex">
+                                    <i class="fas fa-check"></i>
+                                    <div class="flex-grow-1">波段理论，趋势追踪</div>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fas fa-check"></i>
+                                    <div class="flex-grow-1">产品人气震荡上升，投入增加</div>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fas fa-check"></i>
+                                    <div class="flex-grow-1">产品人气震荡下行，及时止损</div>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fas fa-check"></i>
+                                    <div class="flex-grow-1">对单一产品进行价格行为分析</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of services -->
+
+
+    <!-- Details 1 -->
+    <div id="details" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="../static/picture/details-2.svg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h2><span>最佳解决方案</span><br> 对亚马逊商家而言</h2>
+                        <p>基于大数据和自然语言处理技术，对亚马逊市场变化和卖家运营数据进行持续的深度分析。</p>
+                        <p>帮助卖家一站式大数据选品、产品开发和精细化运营</p>
+                        <a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">详细了解</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details 1 -->
+
+
+    <!-- Details Modal -->
+    <div id="staticBackdrop" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="row">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="col-lg-8">
+                        <div class="image-container">
+                            <img class="img-fluid" src="../static/picture/details-modal.jpg" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-4">
+                        <h3>项目追求</h3>
+                        <hr>
+                        <p>通过使用自然语言处理来对大数据集进行总结和分析</p>
+                        <h4>详细介绍</h4>
+                        <p>对亚马逊市场变化和卖家运营数据进行持续的深度分析，帮助卖家一站式大数据选品、产品开发和精细化运营。</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="d-flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div class="flex-grow-1">市场大盘分析</div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div class="flex-grow-1">洞悉竞争环境</div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div class="flex-grow-1">单一产品透视</div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div class="flex-grow-1">同类产品比较</div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div class="flex-grow-1">挖掘小众方向</div>
+                            </li>
+                        </ul>
+                        <a id="modalCtaBtn" class="btn-solid-reg" href="https://r0cbwevaw3.feishu.cn/docs/doccnAy1WzebiLg4nIObcJqcyVc">Details</a>
+                        <button type="button" class="btn-outline-reg" data-bs-dismiss="modal">Close</button>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of modal-content -->
+        </div> <!-- end of modal-dialog -->
+    </div> <!-- end of modal -->
+    <!-- end of details modal -->
+
+
+    <!-- Details 2 -->
+    <div class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h2><span>智能服务</span><br> 掌握市场优势</h2>
+                        <p>持续赋能制造工厂和产业带数字转型，完善数字化智能工具。作为"企业全球直采新通路"，亚马逊将帮助中国优质工厂和品牌商直达全球企业客户，抓住跨境商采增长的机遇。</p>
+                        
+                        <!-- Counter -->
+                        <div class="counter-container">
+                            <div class="counter-cell">
+                                <div data-purecounter-start="0" data-purecounter-end="6300000" data-purecounter-duration="2" class="purecounter">1</div>
+                                <div class="counter-info">亚马逊商家数量</div>
+                            </div> <!-- end of counter-cell -->
+                            <div class="counter-cell red">
+                                <div data-purecounter-start="0" data-purecounter-end="310000000" data-purecounter-duration="2" class="purecounter">1</div>
+                                <div class="counter-info">亚马逊用户数量</div>
+                            </div> <!-- end of counter-cell -->
+                        </div> <!-- end of counter-container -->
+                        <!-- end of counter -->
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="../static/picture/details-2.svg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of counter -->
+    <!-- end of details 2 -->
+
+
+    <!-- Projects -->
+	<div id="projects" class="filter bg-gray">
+		<div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">我们专注的项目</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Filter -->
+                    <div class="button-group filters-button-group">
+                        <button class="button is-checked" data-filter="*">ALL</button>
+                        <button class="button" data-filter=".design">DESIGN</button>
+                        <button class="button" data-filter=".development">DEVELOPMENT</button>
+                        <button class="button" data-filter=".marketing">MARKETING</button>
+                    </div> <!-- end of button group -->
+                    <div class="grid">
+                        <div class="element-item development">
+                            <a href="../static/article.html">
+                                <p><strong>了解我们<br></strong> 通过NLP帮助亚马逊买家解决一系列问题</p>
+                            </a>
+                        </div>
+                        <div class="element-item development">
+                            <a href="../static/article.html">
+                                <img class="img-fluid" src="../static/picture/market_predict.png" alt="alternative">
+                                <p><strong>产品大盘预测</strong> - 通过海量数据筛选出某一类产品的历史数据，来对这个品类的市场做全方位了解</p>
+                            </a>
+                        </div>
+
+                        
+                        <div class="element-item design development">
+                            <a href="../static/article.html">
+                                <img class="img-fluid" src="../static/picture/project-4.jpg" alt="alternative">
+                                <p><strong>自然语言处理</strong> - 更好地在本网站上创建、发现和协作。 加入社区开始您的自然语言处理学习之旅。</p>
+                            </a>
+                        </div>
+                        <div class="element-item design development">
+                            <a href="../static/article.html">
+                                <img class="img-fluid" src="../static/picture/project-5.jpg" alt="alternative">
+                                <p><strong>问题解决者</strong> - 成千上万的创作者在利用 AI 解决音频、视觉和语言问题。</p>
+                            </a>
+                        </div>
+<!--                         
+                        <div class="element-item design marketing">
+                            <a href="../static/article.html">
+                                <img class="img-fluid" src="../static/picture/project-9.jpg" alt="alternative">
+                                <p><strong>服务中小型企业</strong> - 根据企业的需求，为企业决策者提供多维度市场情报 </p>
+                            </a>
+                        </div> -->
+                        
+                        <div class="element-item design marketing">
+                            <a href="../static/article.html">
+                                <img class="img-fluid" src="../static/picture/product_rank_predict.png" alt="alternative">
+                                <p><strong>预测产品排名</strong> - 通过历史产品排名数据，搜索量来预测产品未来的排名</p>
+                            </a>
+                        </div>
+                    </div> <!-- end of grid -->
+                    <!-- end of filter -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+		</div> <!-- end of container -->
+    </div> <!-- end of filter -->
+    <!-- end of projects -->
+
+
+    <!-- Testimonials -->
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="quotes" src="../static/picture/quotes.svg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">自然语言理解是人工智能皇冠上的明珠</p>
+                                            <div class="details">
+                                                <img class="testimonial-image" src="../static/picture/billgate.png" alt="alternative">
+                                                <div class="text">
+                                                    <div class="testimonial-author">Bill Gates</div>
+                                                    <div class="occupation">American business magnate</div>
+                                                </div> <!-- end of text -->
+                                            </div> <!-- end of testimonial-details -->
+                                        </div>
+                                    </div> 
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="quotes" src="../static/picture/quotes.svg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">在下一个十年，人工智能的突破在自然语言的理解。我最近经常讲一句话，懂语言者得天下，人工智能对人类影响最为深刻的就是自然语言方面。</p>
+                                            <div class="details">
+                                                <img class="testimonial-image" src="../static/picture/b2.png" alt="alternative">
+                                                <div class="text">
+                                                    <div class="testimonial-author">沈向洋</div>
+                                                    <div class="occupation">微软全球执行副总裁</div>
+                                                </div> <!-- end of text -->
+                                            </div> <!-- end of testimonial-details -->
+                                        </div>
+                                    </div> 
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="quotes" src="../static/picture/quotes.svg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">持续赋能制造工厂和产业带数字化转型，帮助更多中国优质工厂和品牌商对接海外企业买家</p>
+                                            <div class="details">
+                                                <img class="testimonial-image" src="../static/picture/testimonial-3.jpg" alt="alternative">
+                                                <div class="text">
+                                                    <div class="testimonial-author">Mary Longhorn</div>
+                                                    <div class="occupation">Manager - Firstdev</div>
+                                                </div> <!-- end of text -->
+                                            </div> <!-- end of testimonial-details -->
+                                        </div>
+                                    </div> 
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="quotes" src="../static/picture/quotes.svg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">完善数字化智能工具，高效对接买卖双方。为进一步提升企业订单交易效率，亚马逊企业购陆续推出了大宗商采项目和亚马逊批量服务。</p>
+                                            <div class="details">
+                                                <img class="testimonial-image" src="../static/picture/testimonial-4.jpg" alt="alternative">
+                                                <div class="text">
+                                                    <div class="testimonial-author">Ronny Drummer</div>
+                                                    <div class="occupation">Designer - Sawdust</div>
+                                                </div> <!-- end of text -->
+                                            </div> <!-- end of testimonial-details -->
+                                        </div>
+                                    </div> 
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+        
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+        
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of testimonials -->
+
+
+
+    <!-- Invitation -->
+    <div class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h4>比尔·盖茨说：“语言理解是人工智能皇冠上的明珠</h4>
+                        <p class="p-large">通过建立特定方向的数据集来提高我们模型针对这一方向的泛化性，支持用户使用适合自身应用场景，通过进行算法优化，满足专属场景的更高准确率要求</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of invitation -->
+
+
+    <!-- Contact -->
+    <div id="contact" class="form-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading"><span>如果您对我们的项目感兴趣</span><br> 请联系我们</h2>
+                    <!-- <p class="p-heading"></p> -->
+                    <br><br>
+                    <ul class="list-unstyled li-space-lg">
+                        <li><i class="fas fa-map-marker-alt"></i> &nbsp;北京市顺义区临空经济核心区融慧园6号楼4-156</li>
+                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:00817202212">+81 720 2212</a></li>
+                        <li><i class="fas fa-envelope"></i> &nbsp;<a href="info@qingtong.cn">lorem@ipsum.com</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form--->
+  
+
+
+    <!-- Footer -->
+    <div class="footer bg-gray">
+        <img class="decoration-city" src="../static/picture/decoration-city.svg" alt="alternative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>通过以下方式更好的了解我们</h4>
+                    <div class="social-container">
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled li-space-lg p-small">
+                        <li><a href="../static/article.html">Article Details</a></li>
+                        <li><a href="../static/terms.html">Terms & Conditions</a></li>
+                        <li><a href="../static/privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+                <div class="col-lg-3">
+                    <p class="p-small statement">Copyright &copy; 2022.Company name All rights reserved.</p>
+                </div> <!-- end of col -->
+
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="../static/picture/up-arrow.png" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+    	
+    <!-- Scripts -->
+    <script src="../static/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../static/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../static/js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="../static/js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="../static/js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
